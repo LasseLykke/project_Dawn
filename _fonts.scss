@@ -1,17 +1,7 @@
-.wrapper {
-  height: 50vh;
-  width: auto;
-  background-image: url(./images/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 html {
   font-size: 100%;
-}
+} /*16px*/
 
-/*16px*/
 body {
   background: white;
   font-family: "Inter", sans-serif;
@@ -57,22 +47,3 @@ h3 {
   text-transform: uppercase;
   color: white;
 }
-
-* {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-:root {
-  --bg: #f9f9f9;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-/*# sourceMappingURL=main.css.map */
