@@ -1,0 +1,26 @@
+.wrapper {
+  height: 50vh;
+  background-image: url(./images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg: #f9f9f9;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/*# sourceMappingURL=main.css.map */
