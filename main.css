@@ -7,13 +7,103 @@
   background-position: center;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: var(--clr-primary);
+}
+
+.logo {
+  color: var(--clr-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .nav-links {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: var(--clr-primary);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.nav-links a {
+  color: var(--clr-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 378px) {
+  .nav-links li {
+    opacity: 0;
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 378px) {
+  .burger {
+    display: block;
+  }
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--clr-secondary);
+  margin: 5px;
+}
+
 html {
   font-size: 100%;
 }
 
 /*16px*/
 body {
-  background: white;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.5;
@@ -67,12 +157,21 @@ h3 {
 }
 
 :root {
-  --bg: #f9f9f9;
+  --clr-bg: #fbfcfc;
+  --clr-primary: #0a0a0a;
+  --clr-secondary: #fbfcfc;
+  --clr-feature: ##de3163;
 }
 
 body {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+@media only screen and (max-width: 378px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */
