@@ -1,22 +1,19 @@
-@mixin responsive($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 378px) {
-      @content;
-    }
+@import "./nav";
+@import "./header";
+@import "./fonts";
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
-  @if $breakpoint == tablet {
-    @media only screen and (max-width: 900px) {
-      @content;
-    }
-  }
-  @if $breakpoint == laptop {
-    @media only screen and (max-width: 1400px) {
-      @content;
-    }
-  }
-  @if $breakpoint == desktop {
-    @media only screen and (min-width: 1800px) {
-      @content;
-    }
-  }
+  @include navbar-phone();
 }
+/*@media screen and (max-width: 900px) {
+  @include navbar-tablet();
+}*/
+@media screen and (max-width: 1400px) {
+  @include navbar-laptop();
+}
+/*@media screen and (max-width: 1800px) {
+  @include navbar-deskop();
+}*/

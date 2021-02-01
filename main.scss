@@ -1,8 +1,7 @@
-@import "./mediaquery";
-@import "./header";
 @import "./nav";
+@import "./header";
 @import "./fonts";
-
+@import "./mediaquery";
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -22,8 +21,11 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+}
 
-  @include responsive(phone) {
+// Phone
+@media screen and (max-width: 388px) {
+  body {
     overflow-x: hidden;
   }
 }
