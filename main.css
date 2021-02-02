@@ -111,11 +111,10 @@ nav {
     display: block;
     z-index: 1;
   }
-}
-
-.nav-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .wrapper {
