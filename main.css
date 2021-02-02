@@ -6,7 +6,7 @@ nav {
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: var(--clr-primary);
+  background-color: transparent;
   min-height: 8vh;
 }
 
@@ -47,6 +47,8 @@ nav {
   height: 3px;
   background-color: var(--clr-feature);
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @-webkit-keyframes navLinkFade {
@@ -73,6 +75,20 @@ nav {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media screen and (max-width: 768px) {
