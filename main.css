@@ -4,18 +4,16 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: var(--clr-primary);
   min-height: 8vh;
-  background-color: transparent;
-  color: var(--clr-secondary);
 }
 
 .logo {
   color: var(--clr-secondary);
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .nav-links {
@@ -24,27 +22,30 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
+  width: 40%;
+}
+
+.nav-links a {
+  color: var(--clr-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .nav-links li {
   list-style: none;
 }
 
-.nav-links a {
-  color: var(--clr-secondary);
-  text-decoration: none;
-  letter-spacing: 3px;
-}
-
 .burger {
   display: none;
+  cursor: pointer;
 }
 
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-feature);
   margin: 5px;
 }
 
@@ -74,22 +75,12 @@ nav {
   }
 }
 
-@media screen and (max-width: 1024) {
-  .nav-links {
-    width: 60%;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .nav-links {
     position: absolute;
-    right: 0px;
     height: 100vh;
-    top: 0;
-    background-color: var(--clr-primary);
+    right: 0px;
+    top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,11 +92,19 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    background-color: var(--clr-primary);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  .nav-link li {
+  .nav-links li {
     opacity: 0;
+  }
+  .nav-links a {
+    color: var(--clr-feature);
   }
   .burger {
     display: block;
@@ -188,7 +187,7 @@ h3 {
   --clr-bg: #fbfcfc;
   --clr-primary: #0a0a0a;
   --clr-secondary: #fbfcfc;
-  --clr-feature: ##de3163;
+  --clr-feature: #de3163;
 }
 
 body {
