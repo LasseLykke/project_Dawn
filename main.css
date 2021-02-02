@@ -8,6 +8,7 @@ nav {
       align-content: center;
   background-color: transparent;
   min-height: 8vh;
+  padding-top: 15px;
 }
 
 .logo {
@@ -133,7 +134,7 @@ nav {
 }
 
 .wrapper {
-  height: 50vh;
+  height: 80vh;
   width: auto;
   background-image: url(./images/header.jpg);
   background-repeat: no-repeat;
