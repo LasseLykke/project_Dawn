@@ -1,8 +1,16 @@
-.wrapper {
+.container-header {
   height: 80vh;
   width: auto;
   background-image: url(./images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  .header-content {
+    color: var(--clr-secondary);
+    height: 80%;
+    /*background-color: pink;
+    opacity: 0.5;*/
+    margin-left: 50px;
+  }
 }
