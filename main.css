@@ -133,7 +133,7 @@ nav {
   }
 }
 
-.container-header {
+.header-container {
   height: 80vh;
   width: auto;
   background-image: url(./images/header.jpg);
@@ -142,12 +142,20 @@ nav {
   background-position: center;
 }
 
-.container-header .header-content {
-  color: var(--clr-secondary);
+.header-container .header {
   height: 80%;
   /*background-color: pink;
     opacity: 0.5;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.header-container .header-content {
+  color: var(--clr-secondary);
   margin-left: 50px;
+  margin-top: 40px;
 }
 
 html {
