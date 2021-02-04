@@ -92,6 +92,12 @@ nav {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -156,6 +162,26 @@ nav {
   color: var(--clr-secondary);
   margin-left: 50px;
   margin-top: 40px;
+}
+
+.header-container button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.header-container .btn {
+  background: #0a0a0a;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 10, 10, 0.758141)), color-stop(5%, rgba(10, 10, 31, 0.9066)), to(#de3163));
+  background: linear-gradient(90deg, rgba(10, 10, 10, 0.758141) 0%, rgba(10, 10, 31, 0.9066) 5%, #de3163 100%);
 }
 
 html {

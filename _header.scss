@@ -1,7 +1,7 @@
 .header-container {
   height: 80vh;
   width: auto;
-  background-image: url(./images/header.jpg);
+  //background-image: url(./images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,5 +19,29 @@
     color: var(--clr-secondary);
     margin-left: 50px;
     margin-top: 40px;
+  }
+
+  button {
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    outline: none;
+  }
+  .btn {
+    background: rgb(10, 10, 10);
+    background: linear-gradient(
+      90deg,
+      rgba(10, 10, 10, 0.758140756302521) 0%,
+      rgba(10, 10, 31, 0.9066001400560224) 5%,
+      rgba(222, 49, 99, 1) 100%
+    );
   }
 }
