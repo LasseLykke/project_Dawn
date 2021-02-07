@@ -1,16 +1,13 @@
 .header-container {
   height: 80vh;
   width: auto;
-  //background-image: url(./images/header.jpg);
+  background-image: url(./images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   .header {
     height: 80%;
-    /*background-color: pink;
-    opacity: 0.5;*/
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -20,8 +17,9 @@
     margin-left: 50px;
     margin-top: 40px;
   }
-
   button {
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
     text-decoration: none;
     margin: 10px;
     padding: 15px 45px;
@@ -29,19 +27,44 @@
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
     border: none;
     border-radius: 6px;
     display: block;
     outline: none;
+    font-size: 16px;
+    position: relative;
+
+    &:active {
+      top: 1px;
+    }
   }
-  .btn {
-    background: rgb(10, 10, 10);
-    background: linear-gradient(
-      90deg,
-      rgba(10, 10, 10, 0.758140756302521) 0%,
-      rgba(10, 10, 31, 0.9066001400560224) 5%,
-      rgba(222, 49, 99, 1) 100%
-    );
+}
+.btn {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    border-style: solid;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px 10px 0 10px;
+    border-color: var(--clr-secondary) transparent transparent transparent;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    z-index: 0;
   }
 }
