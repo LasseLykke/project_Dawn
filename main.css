@@ -123,6 +123,7 @@ nav {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     z-index: 1;
+    overflow-y: hidden;
   }
   .nav-links li {
     opacity: 0;
@@ -217,9 +218,56 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .header-container {
+    height: 100vh;
+  }
   button {
     z-index: 0;
   }
+}
+
+.feature-container {
+  height: 50vh;
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.feature-container .feat-left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  max-width: 600px;
+}
+
+.feature-container .feat-1,
+.feature-container .feat-2,
+.feature-container .feat-3,
+.feature-container .feat-4 {
+  grid-column-start: 2/4;
+  color: var(--clr-primary);
+}
+
+.feature-container .icon {
+  display: inline-block;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.feature-container .showcase {
+  width: 500px;
+  color: var(--clr-secondary);
+  margin-top: 40px;
 }
 
 html {
@@ -268,11 +316,10 @@ h3 {
 }
 
 .bigheader-gradient {
-  font-size: 3.815rem;
+  font-size: 2.441rem;
   text-transform: uppercase;
   background-clip: var(--clr-secondary);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--test-1)), color-stop(var(--test-2)), to(var(--test-3)));
-  background-image: linear-gradient(90deg, var(--test-1), var(--test-2), var(--test-3));
+  background-image: linear-gradient(87.54deg, var(--clr-feature), var(--clr-secondary));
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -305,9 +352,8 @@ a:active {
   --clr-primary: #0a0a0a;
   --clr-secondary: #fbfcfc;
   --clr-feature: #de3163;
-  --test-1: rgba(8, 251, 255, 1) 0%;
-  --test-2: rgba(27, 162, 204, 1) 54%;
-  --test-3: rgba(255, 0, 200, 0.36878501400560226) 100%;
+  --test-1: rgb(2, 123, 253) -24.67%;
+  --test-2: rgb(159, 81, 251) 53.5%;
 }
 
 body {

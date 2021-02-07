@@ -43,14 +43,13 @@ h3 {
 }
 
 .bigheader-gradient {
-  font-size: 3.815rem;
+  font-size: 2.441rem;
   text-transform: uppercase;
   background-clip: var(--clr-secondary);
   background-image: linear-gradient(
-    90deg,
-    var(--test-1),
-    var(--test-2),
-    var(--test-3)
+    87.54deg,
+    var(--clr-feature),
+    var(--clr-secondary)
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;

@@ -1,5 +1,6 @@
 @import "./nav";
 @import "./header";
+@import "./feature";
 @import "./fonts";
 * {
   scroll-behavior: smooth;
@@ -15,9 +16,8 @@
   --clr-secondary: #fbfcfc;
   --clr-feature: #de3163;
 
-  --test-1: rgba(8, 251, 255, 1) 0%;
-  --test-2: rgba(27, 162, 204, 1) 54%;
-  --test-3: rgba(255, 0, 200, 0.36878501400560226) 100%;
+  --test-1: rgb(2, 123, 253) -24.67%;
+  --test-2: rgb(159, 81, 251) 53.5%;
 }
 
 body {
