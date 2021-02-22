@@ -1,16 +1,17 @@
-.feature-container {
+.feature-wrapper {
   height: 100%;
-
-  .feature-content {
-    max-width: 600px;
-  }
+  margin: 0 auto;
+  max-width: var(--mx-width);
 }
 
-.feature {
+.feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
+  //max-width: 80%;
   padding: 30px;
+  margin: 0 auto;
+  //background-color: pink;
 
   .item {
     max-height: 100px;
@@ -26,13 +27,14 @@
 }
 
 hr {
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
+  margin-top: 30px;
   color: var(--clr-secondary);
 }
 
 @media screen and (max-width: 900px) {
-  .feature {
+  .feature-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }

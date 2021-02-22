@@ -226,28 +226,27 @@ nav {
   }
 }
 
-.feature-container {
+.feature-wrapper {
   height: 100%;
+  margin: 0 auto;
+  max-width: var(--mx-width);
 }
 
-.feature-container .feature-content {
-  max-width: 600px;
-}
-
-.feature {
+.feature-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
   padding: 30px;
+  margin: 0 auto;
 }
 
-.feature .item {
+.feature-grid .item {
   max-height: 100px;
 }
 
-.feature .icon {
+.feature-grid .icon {
   display: inline-block;
   margin-right: 13px;
   height: 25px;
@@ -256,13 +255,39 @@ nav {
 }
 
 hr {
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
+  margin-top: 30px;
   color: var(--clr-secondary);
 }
 
 @media screen and (max-width: 900px) {
-  .feature {
+  .feature-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.product-wrapper {
+  height: 100vh;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.product-wrapper .product {
+  max-height: 1000px;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-wrapper {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
@@ -281,6 +306,7 @@ body {
 
 p {
   margin-bottom: 1rem;
+  max-width: 50ch;
 }
 
 h1,
@@ -358,6 +384,7 @@ a:active {
   --clr-feature: #de3163;
   --test-1: rgb(2, 123, 253) -24.67%;
   --test-2: rgb(159, 81, 251) 53.5%;
+  --mx-width: 80%;
 }
 
 body {
