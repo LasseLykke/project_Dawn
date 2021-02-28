@@ -1,0 +1,40 @@
+.feature-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: var(--mx-width);
+  padding-bottom: 50px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 30px;
+  margin: 0 auto;
+  //background-color: pink;
+
+  .item {
+    max-height: 100px;
+  }
+
+  .icon {
+    display: inline-block;
+    margin-right: 13px;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+  }
+}
+
+hr {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: var(--clr-secondary);
+}
+
+@media screen and (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

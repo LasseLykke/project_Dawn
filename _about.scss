@@ -1,0 +1,41 @@
+.about-wrapper {
+  height: 50%;
+  background-color: var(--clr-feature);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: var(--mx-width);
+  margin: 0 auto;
+
+  button {
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    outline: none;
+    font-size: 16px;
+    position: relative;
+
+    &:active {
+      top: 1px;
+    }
+  }
+  .download {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
