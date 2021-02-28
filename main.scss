@@ -5,6 +5,7 @@
 @import "./about";
 @import "./contact";
 @import "./fonts";
+
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -14,16 +15,16 @@
 }
 
 :root {
-  --clr-bg: #fbfcfc;
-
   --clr-primary: #0a0a0a;
   --clr-secondary: #fbfcfc;
   --clr-feature: #de3163;
 
-  --test-1: rgb(2, 123, 253) -24.67%;
-  --test-2: rgb(159, 81, 251) 53.5%;
+  // Delete?
+  --linear-1: rgb(2, 123, 253) -24.67%;
+  --linear-2: rgb(159, 81, 251) 53.5%;
 
-  --mx-width: 100%;
+  --mx-width-desk: 90%;
+  --mx-width-phone: 100%;
 }
 
 body {
@@ -33,9 +34,18 @@ body {
   background-color: var(--clr-secondary);
 }
 
+article,
+section {
+  max-width: var(--mx-width-desk);
+}
+
 // Phone
 @media screen and (max-width: 388px) {
   body {
     overflow-x: hidden;
+  }
+  article,
+  section {
+    max-width: var(--mx-width-phone);
   }
 }

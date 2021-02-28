@@ -1,4 +1,5 @@
-.header-container {
+@import "./main.scss";
+.wrapper {
   height: 80vh;
   width: auto;
   background-image: url(./images/header.jpg);
@@ -6,15 +7,9 @@
   background-size: cover;
   background-position: center;
 
-  .header {
-    height: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .header-content {
     color: var(--clr-secondary);
-    margin-left: 50px;
+    //margin-left: 100px;
     margin-top: 40px;
   }
   button {
@@ -64,7 +59,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-container {
+  .wrapper {
     height: 100vh;
   }
   button {
