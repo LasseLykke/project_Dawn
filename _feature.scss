@@ -2,13 +2,13 @@
   height: 100%;
   margin: 0 auto;
   max-width: var(--mx-width);
+  padding-bottom: 50px;
 }
 
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  //max-width: 80%;
   padding: 30px;
   margin: 0 auto;
   //background-color: pink;

@@ -230,6 +230,7 @@ nav {
   height: 100%;
   margin: 0 auto;
   max-width: var(--mx-width);
+  padding-bottom: 50px;
 }
 
 .feature-grid {
@@ -269,15 +270,14 @@ hr {
 }
 
 .product-wrapper {
-  height: 100vh;
-  padding-top: 100px;
+  height: 100%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 80%;
+  max-width: var(--mx-width);
   margin: 0 auto;
 }
 
@@ -291,6 +291,77 @@ hr {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.about-wrapper {
+  height: 50%;
+  background-color: var(--clr-feature);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: var(--mx-width);
+  margin: 0 auto;
+}
+
+.about-wrapper button {
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary);
+  text-decoration: none;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: none;
+  border-radius: 6px;
+  display: block;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.about-wrapper button:active {
+  top: 1px;
+}
+
+.about-wrapper .download {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .about-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.contact-wrapper {
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .email-icon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  display: inline;
 }
 
 html {
@@ -315,7 +386,6 @@ h3,
 h4,
 h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Inter", sans-serif;
   font-weight: 800;
   line-height: 1;
 }
@@ -384,13 +454,14 @@ a:active {
   --clr-feature: #de3163;
   --test-1: rgb(2, 123, 253) -24.67%;
   --test-2: rgb(159, 81, 251) 53.5%;
-  --mx-width: 80%;
+  --mx-width: 100%;
 }
 
 body {
   padding: 0;
   margin: 0;
   border: 0;
+  background-color: var(--clr-secondary);
 }
 
 @media screen and (max-width: 388px) {
