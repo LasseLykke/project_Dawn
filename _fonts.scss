@@ -45,6 +45,7 @@ h3 {
   font-size: 3.815rem;
   text-transform: uppercase;
   color: var(--clr-secondary);
+  max-width: 11ch; // CHANGE THIS IF LONGER TEXT!
 }
 
 .bigheader-gradient {

@@ -152,7 +152,9 @@ nav {
 
 .wrapper .header-content {
   color: var(--clr-secondary);
+  margin-left: 100px;
   margin-top: 40px;
+  max-width: 50%;
 }
 
 .wrapper button {
@@ -178,14 +180,14 @@ nav {
   top: 1px;
 }
 
-.btn {
+.wrapper .btn {
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.btn:before {
+.wrapper .btn:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -203,7 +205,7 @@ nav {
   border-color: var(--clr-secondary) transparent transparent transparent;
 }
 
-.btn:hover:before, .btn:focus:before, .btn:active:before {
+.wrapper .btn:hover:before, .wrapper .btn:focus:before, .wrapper .btn:active:before {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
@@ -403,6 +405,7 @@ h3 {
   font-size: 3.815rem;
   text-transform: uppercase;
   color: var(--clr-secondary);
+  max-width: 11ch;
 }
 
 .bigheader-gradient {
@@ -439,12 +442,11 @@ a:active {
 }
 
 :root {
-  --clr-bg: #fbfcfc;
   --clr-primary: #0a0a0a;
   --clr-secondary: #fbfcfc;
   --clr-feature: #de3163;
-  --test-1: rgb(2, 123, 253) -24.67%;
-  --test-2: rgb(159, 81, 251) 53.5%;
+  --linear-1: rgb(2, 123, 253) -24.67%;
+  --linear-2: rgb(159, 81, 251) 53.5%;
   --mx-width-desk: 90%;
   --mx-width-phone: 100%;
 }
