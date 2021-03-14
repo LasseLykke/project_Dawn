@@ -297,21 +297,26 @@ hr {
   }
 }
 
+.bg {
+  background-color: var(--clr-dark);
+  color: var(--clr-secondary);
+}
+
 .about-wrapper {
   height: 50%;
-  background-color: var(--clr-feature);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: var(--mx-width);
   margin: 0 auto;
+  padding: 50px 0px;
+  max-width: var(--mx-width-desk);
 }
 
 .about-wrapper button {
-  color: var(--clr-secondary);
-  background-color: var(--clr-primary);
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
   text-decoration: none;
   margin: 10px;
   padding: 15px 45px;
@@ -332,6 +337,7 @@ hr {
   top: 1px;
 }
 
+.about-wrapper .about,
 .about-wrapper .download {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -412,6 +418,15 @@ h3 {
   margin-bottom: -0.1rem;
 }
 
+.about-heading {
+  background-clip: var(--clr-secondary);
+  background-image: linear-gradient(-70deg, var(--linear-3), var(--linear-4));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .bigheader {
   font-size: 3.815rem;
   text-transform: uppercase;
@@ -456,6 +471,9 @@ a:active {
   --clr-primary: #0a0a0a;
   --clr-secondary: #fbfcfc;
   --clr-feature: #de3163;
+  --clr-dark: #040d21;
+  --linear-3: #ff7170;
+  --linear-4: #ffe571;
   --linear-1: rgb(2, 123, 253) -24.67%;
   --linear-2: rgb(159, 81, 251) 53.5%;
   --mx-width-desk: 90%;

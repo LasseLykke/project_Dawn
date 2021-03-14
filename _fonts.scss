@@ -41,6 +41,15 @@ h3 {
   margin-bottom: -0.1rem;
 }
 
+.about-heading {
+  background-clip: var(--clr-secondary);
+  background-image: linear-gradient(-70deg, var(--linear-3), var(--linear-4));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .bigheader {
   font-size: 3.815rem;
   text-transform: uppercase;

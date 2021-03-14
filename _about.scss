@@ -1,15 +1,19 @@
+.bg {
+  background-color: var(--clr-dark);
+  color: var(--clr-secondary);
+}
 .about-wrapper {
   height: 50%;
-  background-color: var(--clr-feature);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: var(--mx-width);
   margin: 0 auto;
+  padding: 50px 0px;
+  max-width: var(--mx-width-desk);
 
   button {
-    color: var(--clr-secondary);
-    background-color: var(--clr-primary);
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
     text-decoration: none;
     margin: 10px;
     padding: 15px 45px;
@@ -28,6 +32,7 @@
       top: 1px;
     }
   }
+  .about,
   .download {
     justify-self: center;
     align-self: center;
