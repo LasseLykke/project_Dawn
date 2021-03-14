@@ -5,18 +5,19 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: var(--mx-width);
+  max-width: var(--mx-width-desk);
   margin: 0 auto;
-
-  .product {
+  justify-items: center;
+  .product,
+  .copyright {
     max-height: 1000px;
     max-width: 500px;
-    //justify-self: center;
   }
 }
 
 @media screen and (max-width: 900px) {
   .product-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    max-width: var(--mx-width-phone);
   }
 }

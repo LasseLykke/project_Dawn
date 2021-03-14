@@ -1,20 +1,28 @@
 .feature-wrapper {
   height: 100%;
   margin: 0 auto;
-  max-width: var(--mx-width);
-  padding-bottom: 50px;
+  max-width: var(--mx-width-desk);
+  padding-bottom: 150px;
+
+  .feature {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  padding: 30px;
   margin: 0 auto;
   //background-color: pink;
 
   .item {
-    max-height: 100px;
+    //background-color: #f7f7f7;
+    border-radius: 5%;
+    padding: 20px;
+    box-shadow: 0px 3px 10px -7px rgba(0, 0, 0, 0.61);
   }
 
   .icon {
