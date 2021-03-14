@@ -11,7 +11,8 @@
   padding: 50px 0px;
   max-width: var(--mx-width-desk);
 
-  button {
+  button,
+  .btn {
     color: var(--clr-primary);
     background-color: var(--clr-secondary);
     text-decoration: none;

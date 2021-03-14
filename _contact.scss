@@ -1,14 +1,38 @@
 .contact-wrapper {
   height: 100%;
-  //display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  max-width: var(--mx-width-desk);
+  padding-bottom: 10px;
 
-  .email-icon {
-    height: 60px;
-    width: 60px;
-    position: relative;
-    display: inline;
+  .contact {
+    margin: 0 auto;
+    text-align: center;
+
+    button,
+    .btn {
+      color: var(--clr-secondary);
+      background-color: var(--clr-dark);
+      text-decoration: none;
+      margin: 10px;
+      padding: 50px 50px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      border: none;
+      border-radius: 100px;
+      outline: none;
+      font-size: 16px;
+
+      &:active {
+        top: 1px;
+      }
+
+      .email-icon {
+        filter: invert(100%);
+        height: 45px;
+        width: 45px;
+      }
+    }
   }
 }
